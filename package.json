@@ -2,9 +2,9 @@
   "name": "dndllout",
   "version": "1.0.0",
   "description": "dungeons and dragons fused with fallout text quest adventure",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "test"
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
