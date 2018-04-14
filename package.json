@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/tukerty/DnDLLout/issues"
   },
-  "homepage": "https://github.com/tukerty/DnDLLout#readme"
+  "homepage": "https://github.com/tukerty/DnDLLout#readme",
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "chalk-animation": "^1.6.0",
+    "electron": "^1.8.4",
+    "electron-log": "^2.2.14"
+  }
 }

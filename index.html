@@ -2,15 +2,14 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>DnDLLout</title>
   </head>
   <body>
-
-    {{HUD}}
-
-    <script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
-    </script>
+    {{hud}}
+    {{map}}
   </body>
+  <script>
+    const log = require('electron-log')
+    require('./bin/renderer.js')
+  </script>
 </html>
