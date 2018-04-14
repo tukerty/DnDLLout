@@ -2,9 +2,11 @@
   "name": "dndllout",
   "version": "1.0.0",
   "description": "dungeons and dragons fused with fallout text quest adventure",
-  "main": "main.js",
+  "main": "bin/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "check": "./node_modules/.bin/eslint bin/; exit 0",
+    "fix": "./node_modules/.bin/eslint bin/ --fix; exit 0"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,9 @@
     "chalk-animation": "^1.6.0",
     "electron": "^1.8.4",
     "electron-log": "^2.2.14"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-google": "^0.9.1"
   }
 }
