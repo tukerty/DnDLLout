@@ -1,0 +1,19 @@
+{
+  "name": "dndllout",
+  "version": "1.0.0",
+  "description": "dungeons and dragons fused with fallout text quest adventure",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tukerty/DnDLLout.git"
+  },
+  "author": "Tukerty and Ptsh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tukerty/DnDLLout/issues"
+  },
+  "homepage": "https://github.com/tukerty/DnDLLout#readme"
+}
