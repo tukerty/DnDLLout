@@ -1,6 +1,18 @@
-# DnDLLout
-<<<<<<< HEAD
-Hello
-=======
-tukerty is genius
->>>>>>> 6c77c9d99ea1828e49439a7fd863349d605c8bd3
+# Dungeons And Dragons Fallout
+
+## Useful scripts
+
+### To run project
+```sh
+$ npm start
+```
+
+### To run code through linter
+```sh
+$ npm run check
+```
+
+### To try auto-fix linter warnings 
+```sh
+$ npm run fix
+```
