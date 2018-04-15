@@ -1,5 +1,5 @@
 const Player = {
-      name: "",
+      name: '',
       money: 100,
       health: 100,
       items: [
@@ -19,7 +19,7 @@ const Player = {
         'prop',
       ],
       die: function() {
-          
+
       },
       moveTowards: function() {
 
@@ -31,5 +31,3 @@ const Player = {
           this.money += amount;
       },
     };
-
-const player1 = Object.create(Player);

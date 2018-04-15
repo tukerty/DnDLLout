@@ -1,0 +1,133 @@
+* {
+  border: 1px solid black;
+}
+
+body {
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main-container-wrapper {
+  width: 100vw;
+  height: 85vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-container {
+  display: block;
+  width: 90vw;
+}
+
+.hud {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 5vh;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 10vw;
+  height: 85vh;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 55vh;
+  width: 90vw;
+}
+
+.map {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 60vw;
+  height: 55vh;
+}
+
+.properties {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 30vw;
+  height: 55vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 30vw;
+  height: 15vh;
+}
+
+.sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 30vw;
+  height: 40vh;
+}
+
+.event-history {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 90vw;
+  height: 25vh;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100vw;
+  height: 15vh;
+}
+
+.first_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 80vw;
+  height: 15vh;
+}
+
+.second_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 20vw;
+  height: 15vh;
+}
+
+.input-container {
+  width: 100vw;
+  height: 15vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}

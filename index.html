@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
 
-    {{hud}}
-    {{map}}
-    {{footer}}
-  </body>
-  <script>
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World!</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <div class="main-container-wrapper">
+    <div class="main-container">
+      {{hud}}
+      <div class="controls">
+        {{map}} {{properties}}
+      </div>
+      {{event-history}}
+    </div>
+    {{sidebar}}
+  </div>
+  <div class="input-container">
+    {{input}}
+  </div>
+</body>
+<script>
   const log = require('electron-log');
   require('./bin/renderer.js')
   require('./bin/event-system.js')
-  </script>
+</script>
+
 </html>
