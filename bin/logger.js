@@ -2,7 +2,7 @@
  * Creates log enviroment, and forms console messages
  */
 function init() {
-const log = require('electron-log');
+  const log = require('electron-log');
 const chalk = require('chalk');
 
 log.transports.console = function(msg) {

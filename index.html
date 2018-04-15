@@ -10,4 +10,9 @@
     {{map}}
     {{footer}}
   </body>
+  <script>
+  const log = require('electron-log');
+  require('./bin/renderer.js')
+  require('./bin/event-system.js')
+  </script>
 </html>
