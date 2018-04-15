@@ -38,3 +38,5 @@ function loadAllTemplates() {
 }
 
 loadAllTemplates();
+
+log.debug(document.getElementById('hudblock').innerHTML)
