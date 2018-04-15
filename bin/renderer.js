@@ -2,7 +2,7 @@
 // be executed in the renderer process for that window.
 // All of the Node.js APIs are available in this process.
 
-var renderCompletedEvent = new CustomEvent('renderComplete')
+const renderCompletedEvent = new CustomEvent('renderComplete');
 
 fs = require('fs');
 
@@ -13,8 +13,8 @@ log.info('Renderer is running...');
  * @param {string} name Name of template
  */
 function renderTemplate(name) {
-    log.debug(name)
-    var data = fs.readFileSync('./templates/' + name +'.html', 'utf8');
+    log.debug(name);
+    let data = fs.readFileSync('./templates/' + name +'.html', 'utf8');
     document.body.innerHTML =
     document.body.innerHTML.replace('{{' + name + '}}', data);
 }
@@ -31,8 +31,8 @@ function loadAllTemplates() {
             let filename = items[i].replace('.html', '');
             renderTemplate(filename);
         }
-        log.verbose('Render Completed')
-        document.dispatchEvent(renderCompletedEvent)
+        log.debug('Render Completed');
+        document.dispatchEvent(renderCompletedEvent);
     });
 }
 
