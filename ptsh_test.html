@@ -1,16 +1,35 @@
-<form name="myform"> 
-    <input type="text" id="text_field" />
-    <input type="button" value="send" id="submit" onclick="ptsh()" />
-    <script>
-        var form = document.forms.myform;
-        var text2 =document.getElementById("text_field").value;
-        function ptsh(){
-            text2 =document.getElementById("text_field").value;
-            console.log(text2);
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html" >
+    <title>DnDllout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="test4ptsh/style.css" />
+    <script src="test4ptsh/main.js" type="text/javasript"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="gamecontainer">
+            <canvas id="gamecanvas" width="640" height="480" class="gamelayer">
+            </canvas>
+            <div id="scorescreen" class="gamelayer">
+                <span id="score">Score=0</span>
+            </div>
+            <div id="gamestartscreen" class="gamelayer">
+                
+            </div>
+            <div id="gameselectscreen" class="gamelayer">
 
+            </div>
+            <div id="loadingscreen" class="gamelayer">
 
-        }
-        
-        
-    </script>
-</form>
+            </div>
+            <div id="endingscreen" class="gamelayer">
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

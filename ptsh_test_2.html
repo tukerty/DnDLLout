@@ -9,7 +9,7 @@
             function pageLoaded(){
                 var canvas = document.getElementById("testcanvas");
                 var context = canvas.getContext("2d");
-                context.fillStyle = "red";
+               /* context.fillStyle = "red";
                 context.beginPath();
                 context.moveTo(10, 120);    // Start drawing at 10, 120
                 context.lineTo(10, 180);
@@ -21,16 +21,33 @@
                 context.fill();   
                 context.font = "15pt Arial";
                 context.fillText("Some fill text", 0, 30);
-                context.strokeText("Some stroke text", 0, 100);
-
+                context.strokeText("Some stroke text", 0, 100);*/
+                var playerSprite = document.getElementById("player");
+                //var patter = context.createPatter(playerSprite, "repeat");
+                //context.drawImage(playerSprite, 300, 60, 100, 100);
+                context.translate(50, 50);
+                context.rotate(Math.PI / -6);
+                context.drawImage(playerSprite, 50, 50, 100, 100);
+                
             }
         </script>
     
 </head>
 <body onload="pageLoaded()">
     <canvas width="640" height="480" id="testcanvas" style="border: 1px solid black">
+        <img src="images/Sprayt1.jpg" id="player">
         Your browser does not support HTML5 canvas. Please shift to a newer browser.
     </canvas>
+    <script>
+        var sound = new Audio();
+        sound.src = "audio/gachi.mp3";
+        sound.volume = 0.02;
+        sound.addEventListener("canplaythrough", function(){
+            sound.play();
+        });
+        
+    </script>
+
     
 </body>
 </html>
