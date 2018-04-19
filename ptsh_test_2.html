@@ -1,1 +1,36 @@
-testtest potyash pidr
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Canvas test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+            function pageLoaded(){
+                var canvas = document.getElementById("testcanvas");
+                var context = canvas.getContext("2d");
+                context.fillStyle = "red";
+                context.beginPath();
+                context.moveTo(10, 120);    // Start drawing at 10, 120
+                context.lineTo(10, 180);
+                context.lineTo(110, 150);
+                context.closePath();
+                context.stroke();
+                context.beginPath();
+                context.arc(300, 300, 30, 0, 1*Math.PI, true)
+                context.fill();   
+                context.font = "15pt Arial";
+                context.fillText("Some fill text", 0, 30);
+                context.strokeText("Some stroke text", 0, 100);
+
+            }
+        </script>
+    
+</head>
+<body onload="pageLoaded()">
+    <canvas width="640" height="480" id="testcanvas" style="border: 1px solid black">
+        Your browser does not support HTML5 canvas. Please shift to a newer browser.
+    </canvas>
+    
+</body>
+</html>
